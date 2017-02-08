@@ -11,9 +11,7 @@ namespace Indexer
     {
         class MyClass
         {
-            private int[] array = new int[50];
-
-                                                 //  
+             int[] array = new int[50];                           //  
             public int this[int index]
             {
                 get                              // Getter
