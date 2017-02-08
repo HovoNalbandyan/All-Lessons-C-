@@ -10,7 +10,7 @@ namespace InheritanceExample
     {
         static void Main(string[] args)
         {
-          JuniorClass js=new JuniorClass()
+            JuniorClass js = new JuniorClass();
         }
     }
 }

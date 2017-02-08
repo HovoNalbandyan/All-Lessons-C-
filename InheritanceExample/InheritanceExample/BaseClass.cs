@@ -10,20 +10,18 @@ namespace InheritanceExample
     {
         public string carname;
         public string country;
-        public int volumeEngine;
-        protected int petrol;
-
+       
         //Constructor Default
         public BaseClass()
         {
 
         }
-        public BaseClass(string carname, int petrol, string country, int volumeEngine)
+        public BaseClass(string carname,  string country)
         {
             this.country = country;
-            this.volumeEngine = volumeEngine;
+           
             this.carname = carname;
-            this.petrol = petrol;
+        
             Console.WriteLine("a");
         }
 
