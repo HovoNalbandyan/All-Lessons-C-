@@ -12,7 +12,7 @@ namespace ClassExample
         private double b;
         private double c;
         private double P;
-        //Ctor      Defoult
+        //Ctor      Default
         public Triangle()
         {
             this.a = 7;
