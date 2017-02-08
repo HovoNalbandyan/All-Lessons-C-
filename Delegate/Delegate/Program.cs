@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Delegate
 {
-    
+
     public delegate void MyDelegate();  //first Delegate void
     public delegate int Deleg();//second delegate int
 
@@ -24,13 +24,13 @@ namespace Delegate
             d1 += Func1;
             Console.WriteLine(d1());
             Func2();
-            d1+=Func2;
+            d1 += Func2;
             Console.WriteLine(d1());
-           
+
             Console.ReadKey();
         }
         static int Func1()
-        { 
+        {
             return 1;
         }
 
