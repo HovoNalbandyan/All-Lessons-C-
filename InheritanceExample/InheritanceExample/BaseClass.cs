@@ -18,10 +18,8 @@ namespace InheritanceExample
         }
         public BaseClass(string carname,  string country)
         {
-            this.country = country;
-           
-            this.carname = carname;
-        
+            this.country = country;           
+            this.carname = carname;        
             Console.WriteLine("a");
         }
 

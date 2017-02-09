@@ -18,9 +18,11 @@ namespace ClassExample
             Console.Write("C= ");
             double c = double.Parse(Console.ReadLine());
             Triangle hashv1 = new Triangle(a,b,c);
-            double d = hashv1.Paragic();
-            Console.WriteLine("Paragic="+d); 
-            double d1 = hashv1.Area();
+
+            double d = hashv1.Paragic();//object for paragic method()
+            Console.WriteLine("Paragic="+d);
+
+            double d1 = hashv1.Area();//object for aRea method()
             Console.WriteLine("Area="+d1);
             Console.ReadLine();
         }
