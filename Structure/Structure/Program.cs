@@ -11,23 +11,23 @@ namespace Structure
     namespace Structure //value type inic katarvuma stakum obj sarqeluc heto
     {
         struct ZipCode
-        {  // Поля
+        { //Fields
             int fiveDigitCode;
             int plusFourExtension;
-            // Свойства.
+            //methods.
             public int FiveDigitCode
             {
-                get { Console.WriteLine("axper jan tpum em"); return fiveDigitCode;  }
-                set { fiveDigitCode = value; }
+                get { Console.WriteLine("fiveDigitCode = 1;"); return fiveDigitCode;  }
+                set { fiveDigitCode = 1; }//private field
             }
                        
             public int PlusFourExtension
             {
-                get { return plusFourExtension; }
-                set { plusFourExtension = value; }
+                get { Console.WriteLine("plusFourExtension = 2;"); return plusFourExtension; }
+                set { plusFourExtension = 2; }
             }
+           
         }
-
         class Program
         {
             static void Main()
