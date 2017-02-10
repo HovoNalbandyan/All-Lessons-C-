@@ -12,9 +12,7 @@ namespace Events2
         public event MyDelegate MyEvent = null;
         public void InvokeEvent()
         {  
-
-        MyEvent.Invoke();
-           
+        MyEvent.Invoke();           
         }
         
 
