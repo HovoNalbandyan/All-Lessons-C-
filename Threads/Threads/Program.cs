@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-// Основные и фоновые потоки. По умолчанию свойство IsBackground равно false.
 
 namespace Threads
 {
