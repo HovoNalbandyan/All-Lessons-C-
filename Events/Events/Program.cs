@@ -34,16 +34,12 @@ namespace Events
         static void Main()
         {
             MyClass instance = new MyClass();
-
             // Присоединение обработчиков событий.
             instance.MyEvent += new EventDelegate(Handler1);
             instance.MyEvent += new EventDelegate(Handler2);
             instance.MyEvent += delegate { Console.WriteLine("Анонимный метод 1."); };
-
             instance.InvokeEvent();
-
             Console.WriteLine(new string('-', 20));
-
             // Открепляем Handler2().
             instance.MyEvent -= new EventDelegate(Handler2);
             // Невозможно открепить ранее присоединенный анонимный метод.
