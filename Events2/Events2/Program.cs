@@ -28,6 +28,9 @@ namespace Events2
             instance.MyEvent += new MyDelegate(function1);
             instance.MyEvent += new MyDelegate(function2);
             instance.InvokeEvent();
+            instance.MyEvent += new MyDelegate( Calculate());
+            instance.InvokeEvent();
+
             // Delay.
             Console.ReadKey();
         }
@@ -45,6 +48,7 @@ namespace Events2
         }
         private static void InEvent1()
         {
+
             Console.WriteLine("In Event 1");
         }
 
@@ -52,7 +56,13 @@ namespace Events2
         {
             Console.WriteLine("In Event 2");
         }
+        private static double Calculate()
+        {
+            int a = 2;
+            int b = 4;
+            double sum= a * a + b + b;
 
+        }
     }
 
 }
