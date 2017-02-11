@@ -12,7 +12,6 @@ namespace InterIEnumerable
     public class UserCollection : IEnumerable, IEnumerator
     {
         public Element[] elementsArray = null;
-
         public UserCollection()
         {
             elementsArray = new Element[4];

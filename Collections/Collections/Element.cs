@@ -11,11 +11,9 @@ namespace InterIEnumerable
     public class Element
     {
         // Поля.
-
         private string name;
         private int field1;
         private int field2;
-
         // Конструктор.
         public Element(string s, int a, int b)
         {

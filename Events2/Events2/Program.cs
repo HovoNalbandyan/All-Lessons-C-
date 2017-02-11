@@ -28,7 +28,9 @@ namespace Events2
             instance.MyEvent += new MyDelegate(function1);
             instance.MyEvent += new MyDelegate(function2);
             instance.InvokeEvent();
-            
+            MyDelegate j2 = new MyDelegate(function1);
+            Console.WriteLine(j2);
+
 
             // Delay.
             Console.ReadKey();
@@ -45,7 +47,7 @@ namespace Events2
             Console.WriteLine("Second Function Method");
 
         }
-        private static void InEvent1()
+       public static void InEvent1()
         {
 
             Console.WriteLine("In Event 1");

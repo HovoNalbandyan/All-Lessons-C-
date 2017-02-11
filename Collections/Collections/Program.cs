@@ -14,13 +14,12 @@ namespace InterIEnumerable
             UserCollection myCollection = new UserCollection();
             foreach (Element element in myCollection)
             {
-                Console.WriteLine("Name: {0}  Field1: {1} Field2: {2}", element.Name, element.Field1, element.Field2);
+                //Console.WriteLine("Name: {0}  Field1: {1} Field2: {2}", element.Name, element.Field1, element.Field2);
+                Console.WriteLine("jj");
             }
 
             //myCollection.Reset(); //
-
             Console.Write(new string('-', 29) + "\n");
-
             // Используем foreach, для повторного обращения к каждому объекту Element внутри массива myCollection.
             foreach (Element element in myCollection)
             {
