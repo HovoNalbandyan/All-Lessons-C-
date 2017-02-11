@@ -27,11 +27,17 @@ namespace ClassExample
             this.c = c;
         }
         //Ctor 2 argument and 1 default argument
-        public Triangle(double b, double c)
+        //public Triangle(double b, double c)
+        //{
+        //    this.a = 7;
+        //    this.b = b;
+        //    this.c = c;
+        //}
+        //Method Tigran
+        public Triangle(double x, double y)
+            :this (x,y,0)//default Z=0;
         {
-            this.a = 7;
-            this.b = b;
-            this.c = c;
+
         }
         //This method calculate Paragic of Triangle
         public double Paragic()
