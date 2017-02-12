@@ -27,6 +27,7 @@ namespace Structure
                 set { plusFourExtension = 2; }
             }
            
+           
         }
         class Program
         {

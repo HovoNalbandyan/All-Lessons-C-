@@ -24,8 +24,9 @@ namespace Threads
         {
             // Работа вторичного потока.
             ThreadStart writeSecond = new ThreadStart(WriteSecond);
-            Thread thread = new Thread(writeSecond);
-            thread.Start();
+            Thread a = new Thread(writeSecond);
+            a.Start();
+           
 
             // Работа первичного потока.
             for (int i = 0; i < 10; i++)
