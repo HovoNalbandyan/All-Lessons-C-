@@ -37,8 +37,9 @@ namespace Events
             // Присоединение обработчиков событий.
             instance.MyEvent += new EventDelegate(Handler1);
             instance.MyEvent += new EventDelegate(Handler2);
-            instance.MyEvent += delegate { Console.WriteLine("Анонимный метод 1."); };
+            instance.MyEvent += delegate { Console.WriteLine("99999."); };
             instance.InvokeEvent();
+
             Console.WriteLine(new string('-', 20));
             // Открепляем Handler2().
             instance.MyEvent -= new EventDelegate(Handler2);

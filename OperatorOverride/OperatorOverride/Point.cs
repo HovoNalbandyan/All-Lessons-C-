@@ -9,7 +9,7 @@ namespace OperatorOverride
     // Использовать ключевое слово operator, можно только вместе с ключевым словом static.  
         public struct Point : IComparable
         {
-            // Координаты точки.
+            
             private int x, y;
             public Point(int xPos, int yPos)
             {

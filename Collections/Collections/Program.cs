@@ -16,7 +16,6 @@ namespace InterIEnumerable
             foreach (Element element in myCollection)
             {
                 //Console.WriteLine("Name: {0}  Field1: {1} Field2: {2}", element.Name, element.Field1, element.Field2);
-
                 Console.WriteLine("Gago:{0}","aaa");
                 Console.WriteLine("jj");
             }
