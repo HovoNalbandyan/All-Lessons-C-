@@ -14,7 +14,6 @@ namespace InheritanceExample
         //Constructor Default
         public BaseClass()
         {
-
         }
         public BaseClass(string carname,  string country)
         {
