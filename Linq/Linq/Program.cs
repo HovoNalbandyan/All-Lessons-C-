@@ -17,7 +17,7 @@ namespace Linq
                             group x by x % 2 into partition
                             select new { Key = partition.Key, Count = partition.Count(), Group = partition };
 
-                foreach (var item in query)
+            foreach (var item in query)
                 {
                         Console.WriteLine("mod2 == {0}", item.Key);
                         Console.WriteLine("Count == {0}", item.Count);
