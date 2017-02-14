@@ -11,10 +11,8 @@ namespace StaticClass
         public static int a=8 ;    //Public Class Field must be static Type
         public static int b=8 ;    //Default parameters
 
-
         public static int calc()    ////Public Class methods() must be static Type
-        {
-             
+        {             
             return a * b;
         }
        

@@ -11,7 +11,8 @@ namespace Structure
     namespace Structure //value type inic katarvuma stakum obj sarqeluc heto
     {
         struct ZipCode
-        { //Fields
+
+        {     //Fields
             int fiveDigitCode;
             int plusFourExtension;
             //methods.
@@ -19,15 +20,12 @@ namespace Structure
             {
                 get { Console.WriteLine("fiveDigitCode = 1;"); return fiveDigitCode;  }
                 set { fiveDigitCode = 1; }//private field
-            }
-                       
+            }                       
             public int PlusFourExtension
             {
                 get { Console.WriteLine("plusFourExtension = 2;"); return plusFourExtension; }
                 set { plusFourExtension = 2; }
-            }
-           
-           
+            }                     
         }
         class Program
         {
@@ -38,7 +36,6 @@ namespace Structure
                 zipCode.PlusFourExtension = 1234;
                 Console.WriteLine(zipCode.FiveDigitCode);
                 Console.WriteLine(zipCode.PlusFourExtension);
-
                 // Delay.
                 Console.ReadKey();
             }
