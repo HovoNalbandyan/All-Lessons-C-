@@ -26,7 +26,7 @@ namespace Linq
                         Console.Write("{0}, ", number);
                         Console.WriteLine("\n");
                 }
-
+            GC.Collect();
                
                 Console.ReadKey();
             }
