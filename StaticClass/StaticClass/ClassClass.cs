@@ -19,8 +19,10 @@ namespace StaticClass
         //ctor      
         static ClassClass()
         {
-
+            Console.WriteLine("u");
         }
+
+      
         
        
     }

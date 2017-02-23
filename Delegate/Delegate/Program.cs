@@ -11,31 +11,8 @@ namespace Delegate
     public delegate double DelegateDouble();
 
     class Program
-    {
-        static void Main()
-        { //----------------------------First Delegate
-            MyDelegate d2;
-            d2 = Method1;
-            d2 += Method2;
-            d2();
-            // Delay.
-            //-----------------------------Second Delegate
-            DelegateInt d1 = Func1;
-                        d1 += Func1;
-                        Console.WriteLine(d1());
-                        Func2();
-                        d1 += Func2;
-                        Console.WriteLine(d1());
-            //-----------   Thrird Delegate
-            DelegateDouble B1=Print1;
-                           B1+= Print1;
-                           Console.WriteLine(B1());
-                           B1 += Print2;
-                           Print2();
-                           Console.WriteLine(B1());// Console.WriteLine(B1(Dont error without Scobes,-Why???));
 
-            Console.ReadLine();
-        }
+    {
         static int Func1()
         {
             return 1;
@@ -60,7 +37,7 @@ namespace Delegate
             int a = 7;
             int b = 9;
             return a * b;
-           
+
         }
         static double Print2()
         {
@@ -69,5 +46,32 @@ namespace Delegate
             return a / b;
 
         }
+        static void Main()
+        { //----------------------------First Delegate
+            MyDelegate d2;
+            d2 = Method1;
+            d2 += Method2;
+            d2();
+            // Delay.
+            //-----------------------------Second Delegate
+            DelegateInt d1 = Func1;
+            d1 += Func1;
+            Console.WriteLine(d1());
+            Func2();
+            d1 += Func2;
+            Console.WriteLine(d1());
+            //-----------   Thrird Delegate
+            DelegateDouble B1 = Print1;
+            B1 += Print1;
+            Console.WriteLine(B1());
+            B1 += Print2;
+            Print2();
+            Console.WriteLine(B1());// Console.WriteLine(B1(Dont error without Scobes,-Why???));
+
+            Console.ReadLine();        
+            
+
+        }
+
     }
 }

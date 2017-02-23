@@ -12,33 +12,29 @@ namespace ClassExample
         private double b;
         private double c;
         private double P;
+       
         //Ctor      Default
         public Triangle()
         {
-            this.a = 7;
-            this.b = 8;
-            this.c = 9;
+            a = 3;
+            b = 3;
+            c = 3;
         }
         //Ctor Not Default
-        public Triangle(double a, double b, double c)
+        public Triangle(double b,double c)
         {
-            this.a = a;
+            this.a = 9;
             this.b = b;
             this.c = c;
         }
-        //Ctor 2 argument and 1 default argument
-        //public Triangle(double b, double c)
-        //{
-        //    this.a = 7;
-        //    this.b = b;
-        //    this.c = c;
-        //}
-        //Method Tigran
-        public Triangle(double x, double y)
-            :this (x,y,0)//default Z=0;
+        public Triangle(double a)
         {
-
+            this.a = a;
+            this.b = 5;
+            this.c = 5;
         }
+       
+        
         //This method calculate Paragic of Triangle
         public double Paragic()
         {
