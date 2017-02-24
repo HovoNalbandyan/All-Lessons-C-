@@ -21,7 +21,7 @@ namespace ClassExample
             c = 3;
         }
         //Ctor Not Default
-        public Triangle(double b,double c)
+        public Triangle(double b,double c,double g,double i)
         {
             this.a = 9;
             this.b = b;
