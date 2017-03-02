@@ -22,10 +22,12 @@ namespace ClassExample
             //Console.WriteLine("Paragic="+d);
 
 
-            Triangle t1 = new Triangle(0,0);
-           double dp= t1.Paragic();
-            Console.WriteLine(  dp);
-
+            Triangle t1 = new Triangle(5,5,5);          
+            Console.WriteLine("Paragic="+t1.Paragic());
+            Console.WriteLine("Area="+t1.Area());
+            Console.WriteLine("'---------------'");
+            
+            
             //double d1 = hashv1.Area();//object for aRea method()
             //Console.WriteLine("Area="+d1);
             //Console.ReadLine();

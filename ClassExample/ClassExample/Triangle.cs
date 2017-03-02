@@ -6,22 +6,23 @@ using System.Threading.Tasks;
 
 namespace ClassExample
 {
-    public class Triangle
+    public sealed class Triangle
     {
         private double a;
-        private double b;
+        public double b;
         private double c;
-        private double P;
+        private double P=0;
+      
        
         //Ctor      Default
-        public Triangle()
+        public  Triangle()
         {
             a = 3;
             b = 3;
             c = 3;
         }
         //Ctor Not Default
-        public Triangle(double b,double c,double g,double i)
+        public Triangle(double b,double c)
         {
             this.a = 9;
             this.b = b;
@@ -32,6 +33,12 @@ namespace ClassExample
             this.a = a;
             this.b = 5;
             this.c = 5;
+        }
+        public Triangle(double a,double b,double c)
+        {
+            this.a = a;
+            this.b = b;
+            this.c = c;
         }
        
         
