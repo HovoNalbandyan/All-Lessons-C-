@@ -55,7 +55,7 @@ namespace Delegate
             d2 = Func1;     
             //Console.WriteLine(d2());
             d2 += Func2;
-            d2();
+            Console.WriteLine(d2());
             //Console.WriteLine(d2());            
             //-----------Thrird Delegate
             DelegateDouble B1 ;    
