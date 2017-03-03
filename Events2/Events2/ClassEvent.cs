@@ -14,8 +14,7 @@ namespace Events2
         {  
         MyEvent.Invoke();           
         }
-
-       
+             
 
 
     }

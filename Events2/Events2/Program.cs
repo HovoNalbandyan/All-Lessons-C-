@@ -8,8 +8,6 @@ namespace Events2
 
 {
     public delegate void MyDelegate();
-
-
     class Program
     {
         static void Main(string[] args)
@@ -30,26 +28,19 @@ namespace Events2
             instance.InvokeEvent();
             MyDelegate j2 = new MyDelegate(function1);
             Console.WriteLine(j2);
-
-
             // Delay.
             Console.ReadKey();
         }
-        public static void function1()
+        private static void function1()
         {
-
             Console.WriteLine("First Function Method");
-
         }
         public static void function2()
         {
-
             Console.WriteLine("Second Function Method");
-
         }
-       public static void InEvent1()
+        public static void InEvent1()
         {
-
             Console.WriteLine("In Event 1");
         }
 
@@ -57,7 +48,7 @@ namespace Events2
         {
             Console.WriteLine("In Event 2");
         }
-        
+
     }
 
 }
